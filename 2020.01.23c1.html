@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2020.01.23c1</title>
+    <style>
+        #color{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            /* background-color: aqua; */
+            /* background-color: blue; */
+            background-color: rgb(0,255,255);
+        }
+    </style>
+</head>
+<body>
+    <div class="color" id="color"></div>
+</body>
+<script>
+    alert("武汉加油ヾ(◍°∇°◍)ﾉﾞ！中国加油！大家记得带好口罩，勤洗手，不要吃野味，尽量呆在家里！")
+    var color = document.getElementById("color");
+    color.onclick = function(){
+        color.style.background = "rgb(" + parseInt(255*Math.random()) + "," + parseInt(255*Math.random()) + "," + parseInt(255*Math.random()) + ")";
+    }
+</script>
+</html>
